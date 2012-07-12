@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="Templates">
+        <folder name="Project">
+            <folder name="PHP">
+                <file name="JqueryMobileProject.zip" url="nbresloc:/jquerymobile/JqueryMobileProject.zip">
+                    <!--jquerymobile.JqueryMobileWizardIterator-->
+                    <attr boolvalue="true" name="template"/>
+                    <attr
+                        bundlevalue="jquerymobile.Bundle#JqueryMobile_displayName" name="displayName"/>
+                    <attr name="iconBase" stringvalue="jquerymobile/JqueryMobile.png"/>
+                    <attr name="instantiatingWizardURL" urlvalue="nbresloc:/jquerymobile/JqueryMobileDescription.html"/>
+                    <attr name="instantiatingIterator" newvalue="jquerymobile.JqueryMobileWizardIterator"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+</filesystem>

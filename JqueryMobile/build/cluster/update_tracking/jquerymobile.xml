@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="jquerymobile">
+    <module_version install_time="1337261936459" last="true" origin="installer" specification_version="1.0">
+        <file crc="951574813" name="config/Modules/jquerymobile.xml"/>
+        <file crc="3655074987" name="modules/jquerymobile.jar"/>
+    </module_version>
+</module>
