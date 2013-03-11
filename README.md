@@ -6,5 +6,5 @@ JQUERY MOBILE - PLUGIN
 * More info: http://view.jquerymobile.com/1.3.0/
 * Download: http://plugins.netbeans.org/plugin/43006
 
-	 keytool -genkey -storepass specialsauce -alias myself -keystore nbproject/private/keystore
 
+	keytool -genkey -storepass specialsauce -alias myself -keystore nbproject/private/keystore
