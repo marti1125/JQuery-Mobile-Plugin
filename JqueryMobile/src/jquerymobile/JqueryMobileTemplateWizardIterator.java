@@ -37,39 +37,33 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 // TODO define position attribute
-@TemplateRegistration(folder = "Project/PHP", displayName = "#JqueryMobile_displayName", description = "JqueryMobileDescription.html", iconBase = "jquerymobile/JqueryMobile.png", content = "JqueryMobileProject.zip")
-@Messages("JqueryMobile_displayName=JqueryMobile")
-public class JqueryMobileWizardIterator implements WizardDescriptor./*
-         * Progress
-         */InstantiatingIterator {
+@TemplateRegistration(folder = "Project/ClientSide", displayName = "#JqueryMobileTemplate_displayName", description = "JqueryMobileTemplateDescription.html", iconBase = "jquerymobile/JqueryMobileTemplate.png", content = "JqueryMobileTemplateProject.zip")
+@Messages("JqueryMobileTemplate_displayName=JqueryMobile")
+public class JqueryMobileTemplateWizardIterator implements WizardDescriptor./*Progress*/InstantiatingIterator {
 
     private int index;
     private WizardDescriptor.Panel[] panels;
     private WizardDescriptor wiz;
 
-    public JqueryMobileWizardIterator() {
+    public JqueryMobileTemplateWizardIterator() {
     }
 
-    public static JqueryMobileWizardIterator createIterator() {
-        return new JqueryMobileWizardIterator();
+    public static JqueryMobileTemplateWizardIterator createIterator() {
+        return new JqueryMobileTemplateWizardIterator();
     }
 
     private WizardDescriptor.Panel[] createPanels() {
         return new WizardDescriptor.Panel[]{
-                    new JqueryMobileWizardPanel(),};
+            new JqueryMobileTemplateWizardPanel(),};
     }
 
     private String[] createSteps() {
         return new String[]{
-                    NbBundle.getMessage(JqueryMobileWizardIterator.class, "LBL_CreateProjectStep")
-                };
+            NbBundle.getMessage(JqueryMobileTemplateWizardIterator.class, "LBL_CreateProjectStep")
+        };
     }
 
-    public Set/*
-             * <FileObject>
-             */ instantiate(/*
-             * ProgressHandle handle
-             */) throws IOException {
+    public Set/*<FileObject>*/ instantiate(/*ProgressHandle handle*/) throws IOException {
         Set<FileObject> resultSet = new LinkedHashSet<FileObject>();
         File dirF = FileUtil.normalizeFile((File) wiz.getProperty("projdir"));
         dirF.mkdirs();
