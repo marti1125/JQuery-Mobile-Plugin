@@ -47,7 +47,7 @@ public class JqmCompletionProvider implements CompletionProvider {
                 
                 for (String info : infoJQM) {
                     if(!info.equals("")){
-                        completionResultSet.addItem((CompletionItem) new JqmCompletionItem(info, caretOffset));
+                        completionResultSet.addItem( new JqmCompletionItem(info, caretOffset));
                     }
                 }
                 
