@@ -31,7 +31,7 @@ public class JqmCompletionProvider implements CompletionProvider {
         return new AsyncCompletionTask(new AsyncCompletionQuery() {
 
             @Override
-            protected void query(CompletionResultSet crs, Document dcmnt, int i) {
+            protected void query(CompletionResultSet completionResultSet, Document document, int caretOffset) {
                 
             }
         });
