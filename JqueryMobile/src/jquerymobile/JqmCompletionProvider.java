@@ -6,9 +6,11 @@ package jquerymobile;
  */
 
 import javax.swing.text.JTextComponent;
+import org.netbeans.api.editor.mimelookup.MimeRegistration;
 import org.netbeans.spi.editor.completion.CompletionProvider;
 import org.netbeans.spi.editor.completion.CompletionTask;
 
+@MimeRegistration(mimeType = "text/html", service = CompletionProvider.class)
 public class JqmCompletionProvider implements CompletionProvider {
     
     public JqmCompletionProvider() {
