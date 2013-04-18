@@ -17,25 +17,25 @@ import org.openide.util.NbBundle;
 /**
  * Panel just asking for basic info.
  */
-public class JqueryMobileWizardPanel implements WizardDescriptor.Panel,
+public class JqueryMobileTemplateWizardPanel implements WizardDescriptor.Panel,
         WizardDescriptor.ValidatingPanel, WizardDescriptor.FinishablePanel {
 
     private WizardDescriptor wizardDescriptor;
-    private JqueryMobilePanelVisual component;
+    private JqueryMobileTemplatePanelVisual component;
 
-    public JqueryMobileWizardPanel() {
+    public JqueryMobileTemplateWizardPanel() {
     }
 
     public Component getComponent() {
         if (component == null) {
-            component = new JqueryMobilePanelVisual(this);
-            component.setName(NbBundle.getMessage(JqueryMobileWizardPanel.class, "LBL_CreateProjectStep"));
+            component = new JqueryMobileTemplatePanelVisual(this);
+            component.setName(NbBundle.getMessage(JqueryMobileTemplateWizardPanel.class, "LBL_CreateProjectStep"));
         }
         return component;
     }
 
     public HelpCtx getHelp() {
-        return new HelpCtx(JqueryMobileWizardPanel.class);
+        return new HelpCtx(JqueryMobileTemplateWizardPanel.class);
     }
 
     public boolean isValid() {

@@ -15,12 +15,12 @@ import org.openide.WizardDescriptor;
 import org.openide.WizardValidationException;
 import org.openide.filesystems.FileUtil;
 
-public class JqueryMobilePanelVisual extends JPanel implements DocumentListener {
+public class JqueryMobileTemplatePanelVisual extends JPanel implements DocumentListener {
 
     public static final String PROP_PROJECT_NAME = "projectName";
-    private JqueryMobileWizardPanel panel;
+    private JqueryMobileTemplateWizardPanel panel;
 
-    public JqueryMobilePanelVisual(JqueryMobileWizardPanel panel) {
+    public JqueryMobileTemplatePanelVisual(JqueryMobileTemplateWizardPanel panel) {
         initComponents();
         this.panel = panel;
         // Register listener on the textFields to make the automatic updates
@@ -49,13 +49,13 @@ public class JqueryMobilePanelVisual extends JPanel implements DocumentListener 
         createdFolderTextField = new javax.swing.JTextField();
 
         projectNameLabel.setLabelFor(projectNameTextField);
-        org.openide.awt.Mnemonics.setLocalizedText(projectNameLabel, org.openide.util.NbBundle.getMessage(JqueryMobilePanelVisual.class, "JqueryMobilePanelVisual.projectNameLabel.text")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(projectNameLabel, org.openide.util.NbBundle.getMessage(JqueryMobileTemplatePanelVisual.class, "JqueryMobileTemplatePanelVisual.projectNameLabel.text")); // NOI18N
 
         projectLocationLabel.setLabelFor(projectLocationTextField);
-        org.openide.awt.Mnemonics.setLocalizedText(projectLocationLabel, org.openide.util.NbBundle.getMessage(JqueryMobilePanelVisual.class, "JqueryMobilePanelVisual.projectLocationLabel.text")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(projectLocationLabel, org.openide.util.NbBundle.getMessage(JqueryMobileTemplatePanelVisual.class, "JqueryMobileTemplatePanelVisual.projectLocationLabel.text")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(browseButton, org.openide.util.NbBundle.getMessage(JqueryMobilePanelVisual.class, "JqueryMobilePanelVisual.browseButton.text")); // NOI18N
-        browseButton.setActionCommand(org.openide.util.NbBundle.getMessage(JqueryMobilePanelVisual.class, "JqueryMobilePanelVisual.browseButton.actionCommand")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(browseButton, org.openide.util.NbBundle.getMessage(JqueryMobileTemplatePanelVisual.class, "JqueryMobileTemplatePanelVisual.browseButton.text")); // NOI18N
+        browseButton.setActionCommand(org.openide.util.NbBundle.getMessage(JqueryMobileTemplatePanelVisual.class, "JqueryMobileTemplatePanelVisual.browseButton.actionCommand")); // NOI18N
         browseButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 browseButtonActionPerformed(evt);
@@ -63,7 +63,7 @@ public class JqueryMobilePanelVisual extends JPanel implements DocumentListener 
         });
 
         createdFolderLabel.setLabelFor(createdFolderTextField);
-        org.openide.awt.Mnemonics.setLocalizedText(createdFolderLabel, org.openide.util.NbBundle.getMessage(JqueryMobilePanelVisual.class, "JqueryMobilePanelVisual.createdFolderLabel.text")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(createdFolderLabel, org.openide.util.NbBundle.getMessage(JqueryMobileTemplatePanelVisual.class, "JqueryMobileTemplatePanelVisual.createdFolderLabel.text")); // NOI18N
 
         createdFolderTextField.setEditable(false);
 
@@ -207,7 +207,7 @@ public class JqueryMobilePanelVisual extends JPanel implements DocumentListener 
 
         String projectName = (String) settings.getProperty("name");
         if (projectName == null) {
-            projectName = "JqueryMobile";
+            projectName = "JqueryMobileTemplate";
         }
         this.projectNameTextField.setText(projectName);
         this.projectNameTextField.selectAll();

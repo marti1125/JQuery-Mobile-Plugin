@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.apisupport.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
-            <code-name-base>jquerymobile</code-name-base>
+            <code-name-base>JqueryMobile</code-name-base>
             <standalone/>
             <module-dependencies>
                 <dependency>
@@ -71,6 +71,14 @@
                     <compile-dependency/>
                     <run-dependency>
                         <specification-version>8.19.2</specification-version>
+                    </run-dependency>
+                </dependency>
+                <dependency>
+                    <code-name-base>org.openide.util.lookup</code-name-base>
+                    <build-prerequisite/>
+                    <compile-dependency/>
+                    <run-dependency>
+                        <specification-version>8.19.1</specification-version>
                     </run-dependency>
                 </dependency>
             </module-dependencies>
