@@ -38,8 +38,8 @@ public class JqmCompletionProvider implements CompletionProvider {
     }
 
     @Override
-    public int getAutoQueryTypes(JTextComponent jtc, String string) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public int getAutoQueryTypes(JTextComponent component, String string) {
+        return 0;
     }
     
 }
