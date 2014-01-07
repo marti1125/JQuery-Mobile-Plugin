@@ -8,3 +8,5 @@
 
 ##Create NBM	
 	keytool -genkey -storepass specialsauce -alias myself -keystore nbproject/private/keystore
+	
+This project is no longer supported
