@@ -1,5 +1,7 @@
 ##JQUERY MOBILE - PLUGIN
 
+> work in progress for a new version
+
 * Contact: marti1125@gmail.com
 * License: GPLv3
 * Version: 0.2
@@ -8,5 +10,4 @@
 
 ##Create NBM	
 	keytool -genkey -storepass specialsauce -alias myself -keystore nbproject/private/keystore
-	
-This project is no longer supported
+
