@@ -1,4 +1,4 @@
-##JQUERY MOBILE - PLUGIN
+## JQUERY MOBILE - PLUGIN
 
 > work in progress for a new version
 
@@ -8,6 +8,6 @@
 * More info: http://view.jquerymobile.com/1.3.0/
 * Download: http://plugins.netbeans.org/plugin/43006
 
-##Create NBM	
+## Create NBM	
 	keytool -genkey -storepass specialsauce -alias myself -keystore nbproject/private/keystore
 
