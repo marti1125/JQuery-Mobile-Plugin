@@ -7,11 +7,9 @@ package jquerymobile;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import javax.swing.text.Document;
 import javax.swing.text.JTextComponent;
 import org.netbeans.api.editor.mimelookup.MimeRegistration;
-import org.netbeans.spi.editor.completion.CompletionItem;
 import org.netbeans.spi.editor.completion.CompletionProvider;
 import org.netbeans.spi.editor.completion.CompletionResultSet;
 import org.netbeans.spi.editor.completion.CompletionTask;
@@ -37,7 +35,7 @@ public class JqmCompletionProvider implements CompletionProvider {
             @Override
             protected void query(CompletionResultSet completionResultSet, Document document, int caretOffset) {
                                 
-                List<String> infoJQM = new ArrayList<String>();
+                List<String> infoJQM = new ArrayList<>();
                 infoJQM.add( "jqm" );
                 infoJQM.add( "hola" );
                 infoJQM.add( "hola1" );
